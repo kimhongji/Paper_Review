@@ -46,6 +46,12 @@ HBase는 데이터를 효율적으로 찾기 위해 multi-layed index를 사용�
 원래 HBase에는 primary row key에 의해 정렬된 단일 인덱스만 존재한다. -> full scan의 위험
 secondary-index 를 구성하는 것은 HBase에서 보통 사용하는 방식 중에 하나다. 
 
+---------------------
+## 각종 HBase 활용 방법
+
+1. 비트윈에서의 secondary index 구현
+
+
 ## Reference
 
 https://www.joinc.co.kr/w/man/12/hadoop/hbase/about  

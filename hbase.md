@@ -40,8 +40,8 @@ MemStore: 쓰기 캐시로, 디스크에 쓰기 전 메모리 에서 수정되�
 
 클라이언트에서 데이터와 함께 put 요청을 전송하면 WAL에 기록된다. WAL에 쌓인 데이터는 MemStore로 복사된다. 이때 MemStore는 key/value 데이터를 정렬해서 저장한다. 
 
-
-
+7. HFile 구조
+HBase는 데이터를 
 
 ## Reference
 

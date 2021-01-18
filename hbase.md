@@ -25,6 +25,9 @@ HM은 전체 클러스터를 관리하는 역할을 한다. 주키퍼를 이용�
 여기서 주키퍼(zookeeper)란 클러스터를 구성하는 서버들의 상태를 관리하며, 서비스들이 살아 있는지 사용 가능한지등을 모니터링한다.
 주키퍼는 heartbeat를 이용해서 노드의 상태를 관리한다. 
 
+![image](https://user-images.githubusercontent.com/36401495/104875621-11e4ae80-5999-11eb-87c6-89ea8ebe5093.png)
+
+
 5. META 테이블 
 META테이블은 HBase 카탈로그 테이블을 유지하며 각종 리전 위치 정보 등에 대한 데이터를 관리하며 이 테이블은 주키퍼가 관리한다. 
 
@@ -32,6 +35,10 @@ META테이블은 HBase 카탈로그 테이블을 유지하며 각종 리전 위�
 WAL(Write Ahead Log): 데이터 저장 실패 복구를 위한 로그 파일이다.
 BlockCahce: 읽기 캐시로 자주 접근하는 데이터를 메모리에 올려놓는다.
 MemStore: 쓰기 캐시로, 디스크에 쓰기 전 메모리 에서 수정되어 저장된 캐시다. 디스크에 쓰기전 정렬되며, 각 리전의 컬럼패밀리당 하나가 존재한다.
+
+![image](https://user-images.githubusercontent.com/36401495/104875615-0a250a00-5999-11eb-9b61-370acfd6ce3d.png)
+
+클라이언트에서 데이터와 함께 put 요청을 전송하면 WAL에 기록된다. WAL에 쌓인 데이터는 MemStore로 복사된다. 이때 MemStore는 key/value 데이터를 정렬해서 저장한다. 
 
 
 

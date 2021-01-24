@@ -18,23 +18,23 @@
 
 2. 도커 명령어
 ```bash
-$ docker --version   				//도커 버전
-$ docker pull [image_nmae] 			//이미지 다운로드
-$ docker images 					//다운로드된 이미지들
-$ docker create [opt] [image_name] 	//다운로드한 이미지를 이용해 컨테이너 생생
-$ dokcer run [opt] [image_name]		//컨테이너 생성 및 실행 (없으면 알아서 pull을 해서 다운을 받음)
-$ docker start [container_name] 	//컨테이너 실행
-$ docker restart [container_name]	//컨테이너 재실행
-$ docker attach [container_name]	//컨테이너 접속
-$ docker stop [container_name]		//컨테이너 정지 (컨테이너 id or name) 입력
-$ docker ps 						//실행중인 컨테이너 목록
-$ docker ps -a 						//종료된 컨테이너 포함 컨테이너 목록
-$ docker rename [from] [to]			//컨테이너 이름 변경
-$ docker rm [container_name]		//컨테이너 삭제
-$ docker rmi [docker_name]          //도커 이미지 삭제
-$ docker exec                       //실행중인 컨테이너에 접속할 때 
-$ docker logs [container_name or id]//생성이나 실행되면서 생긴 로그 확인 (-f)와 같은 옵션을 주면 대기 하면서 어떤 로그가 생기는지 계속 확인 가능
-$ docker network connect [container]//기존 생성 컨테이너에 네트워크 추가
+$docker --version   				//도커 버전
+$docker pull [image_nmae] 			//이미지 다운로드
+$docker images 					//다운로드된 이미지들
+$docker create [opt] [image_name] 	//다운로드한 이미지를 이용해 컨테이너 생생
+$dokcer run [opt] [image_name]		//컨테이너 생성 및 실행 (없으면 알아서 pull을 해서 다운을 받음)
+$docker start [container_name] 	//컨테이너 실행
+$docker restart [container_name]	//컨테이너 재실행
+$docker attach [container_name]	//컨테이너 접속
+$docker stop [container_name]		//컨테이너 정지 (컨테이너 id or name) 입력
+$docker ps 						//실행중인 컨테이너 목록
+$docker ps -a 						//종료된 컨테이너 포함 컨테이너 목록
+$docker rename [from] [to]			//컨테이너 이름 변경
+$docker rm [container_name]		//컨테이너 삭제
+$docker rmi [docker_name]          //도커 이미지 삭제
+$docker exec                       //실행중인 컨테이너에 접속할 때 
+$docker logs [container_name or id]//생성이나 실행되면서 생긴 로그 확인 (-f)와 같은 옵션을 주면 대기 하면서 어떤 로그가 생기는지 계속 확인 가능
+$docker network connect [container]//기존 생성 컨테이너에 네트워크 추가
 ```
 
 주요 옵션
@@ -80,7 +80,7 @@ ex) docker run ubuntu 하면 생성 되자마자 종료되지만 docker run -rm 
 - 아래처럼 명령을 하면 docker client와 docker server의 정보가 뜸. 
 
 ```bash
-$ docker version
+$docker version
 ```
 - docker 는 client에서 docker 관련 명령어를 입력하면 server로 이동해서 동작을 수행한 후 다시 client로 결과를 넘겨주는 역할을 함
 

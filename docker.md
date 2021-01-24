@@ -32,7 +32,7 @@ $docker ps -a 						//종료된 컨테이너 포함 컨테이너 목록
 $docker rename [from] [to]			//컨테이너 이름 변경
 $docker rm [container_name]		//컨테이너 삭제
 $docker rmi [docker_name]          //도커 이미지 삭제
-$docker exec                       //실행중인 컨테이너에 접속할 때 
+$docker exec [id or name]                       //실행중인 컨테이너에 접속할 때 
 $docker logs [container_name or id]//생성이나 실행되면서 생긴 로그 확인 (-f)와 같은 옵션을 주면 대기 하면서 어떤 로그가 생기는지 계속 확인 가능
 $docker network connect [container]//기존 생성 컨테이너에 네트워크 추가
 ```
@@ -86,6 +86,13 @@ $docker version
 
 (대충 client, server 동작 그림)
 
+- 도커 컴포즈?(docker compose) : 컨테이너 설치시 옵션, 설정 등을 정리한 파일 yaml 파일에 정리하며 key:value 형식처럼 지정되어 있음. 
+아래 명령어를 통해 실행 가능
+
+```bash
+$docker-compose up      //실행
+$docker-compose down    //종료
+```
 
 
 

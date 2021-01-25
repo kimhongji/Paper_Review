@@ -67,7 +67,7 @@ ex) docker run ubuntu 하면 생성 되자마자 종료되지만 docker run -rm 
 - 기술적인 관점에서 보자면 가상머신 처럼 각각의 os 자체를 분리하는게 아니라 조금더 가벼움
 - 각각의 플랫폼의 배포 방법의 차이를 표준화 해서 통일화 하였음!
 
-(대충 vm과 docker 차이 그림)
+![image](https://user-images.githubusercontent.com/36401495/105649337-38ec3480-5ef3-11eb-8d8f-42290b54f92e.png)
 
 - 도커의 미래? : 컨테이너의 미래는 쿠버네티스와 결합하여 더욱 확장될 것. 
 - 쿠버네티스를 이용해 여러대의 서버와 여러대의 서비스를 관리하기 쉽도록 함
@@ -84,7 +84,7 @@ $docker version
 ```
 - docker 는 client에서 docker 관련 명령어를 입력하면 server로 이동해서 동작을 수행한 후 다시 client로 결과를 넘겨주는 역할을 함
 
-(대충 client, server 동작 그림)
+![image](https://user-images.githubusercontent.com/36401495/105649374-56210300-5ef3-11eb-9ff9-b51a2eea3003.png)
 
 - 도커 컴포즈?(docker compose) : 컨테이너 설치시 옵션, 설정 등을 정리한 파일 yaml 파일에 정리하며 key:value 형식처럼 지정되어 있음. 
 아래 명령어를 통해 실행 가능

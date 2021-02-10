@@ -12,7 +12,16 @@ CSSOM 트리를 만들면서 공통의 스타일 -> 정의 스타일 -> 인라�
 ### 1. 배경
 - 자바스크립트를 보완하여 타입스크립트라고도 하 MVC/MVVM 프레임워크로 단일 페이지 웹 어플리케이션(SPA; Single Page web Application)을 제작하는데 사용된다. 
 - 간단하게 MVC 패턴을 정리하면 Model/View/Controller 로, Model은 데이터, Veiw는 화면, Controller 는 Model과 View를 이어주고 관리하는 역할을 한다. 
+- React나 Vue와 비교해서 차이점은?
 
+```
+React: 페이스북이 개발하고 관리하고 있는 스크립트이며 Angluar와 다르게 all-in-one은 아님
+Vue: React나 Angular에 비해 상대적으로 배우기 쉬우며, 단순성과 유연성을 지니고 있지만 반면에 테스트와 디버깅에서 힘든 특징이 있음
+Angular: app개발에 필요한 모든 것을 제공하기 때문에 내부 동작 방법에 대해서 특징을 알고 있어야 함, typescript기반으로 제작됨
+```
+
+그러면 Typescript란 무엇인가?  
+- 
 
 ### 2. angular js는 어떻게 동작하는가
 
@@ -47,3 +56,8 @@ myApp.controller('MainCtrl', ['$scope', function ($scope) {
 - ng-* 와 같은 지시자들이 디렉티브라고 할 수 있음
 
 <ng-click 사용 예시 및 방법>
+
+--------
+
+## Reference
+* [1] https://medium.com/sjk5766/angular-vs-react-vs-vue-72046f6748b8

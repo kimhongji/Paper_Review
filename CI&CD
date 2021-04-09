@@ -22,7 +22,9 @@ GoCD는 젠킨스와 비슷하게 CI/CD 툴로 서버와 에이전트 관계로 
  * pipline: test, build, deploy등과 같은 일련의 작업들을 정의해 둔 것
  * material: trigger 를 위한 용도라고도 생각해도 되며 소스 코드가 수정됐을때 이를 감지하여 trigger 하는 역할을 하며 pipeline에  최소 하나의 material이 있어야 한다. 
 
-
+##### example
+###### GoCD를 이용하여 git 소스를 원격 서버로 주기적으로 패치 하기 위해서는 어떠한 작업들을 설정해 줘야 하나? 
+ㅇㄹㅇ
 
 
 ------------
